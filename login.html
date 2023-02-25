@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="left-container">
+      <div class="info">
+        <a href="home.html"
+          ><img id="logo" src="img/logo.png" alt="FIFA logo"
+        /></a>
+
+        <h1>The home of everything football.</h1>
+
+        <p>
+          Sign up to access our original shows, documentaries, and the greatest
+          football archive ever. The Happiest Man in the World Only available on
+          FIFA+
+        </p>
+      </div>
+    </div>
+
+    <div class="login-container">
+      <h1 class="header">Sign in</h1>
+
+      <form name="form">
+        <div class="email">
+          <label class="input-label" for="email">Email</label><br />
+          <input
+            class="input border padding"
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+          />
+          <p id="valEmail" class="validation"></p>
+        </div>
+        <div class="password">
+          <label class="input-label" for="password">Password</label><br />
+          <input
+            class="input border padding"
+            type="password"
+            name="password"
+            placeholder="Enter your Password"
+          />
+          <p id="valPassword" class="validation"></p>
+        </div>
+        <div class="gender">
+          <p class="input-label">Gender</p>
+          <p>
+            <br />
+            <label class="input-label" for="male">Male</label>
+            <input type="radio" name="gender" />
+            <label class="input-label" for="female">Female</label>
+            <input type="radio" name="gender" />
+            <label class="input-label" for="other">Other</label>
+            <input class="border other" type="text" name="gender" />
+          </p>
+          <p id="valGender" class="validation"></p>
+        </div>
+
+        <div class="region">
+          <p class="input-label">Region</p>
+          <select
+            class="border input-label padding"
+            name="continent"
+            id="continent"
+          >
+            <option class="input-label" value="">Select your continent</option>
+            <option class="input-label" value="africa">Africa</option>
+            <option class="input-label" value="asia">Asia</option>
+            <option class="input-label" value="europe">Europe</option>
+            <option class="input-label" value="n-america">North America</option>
+            <option class="input-label" value="s-america">South America</option>
+            <option class="input-label" value="oceania">Oceania</option>
+          </select>
+          <p id="valContinent" class="validation"></p>
+        </div>
+
+        <button id="signin" onclick="return validateForm()">SIGN IN</button>
+
+        <a href="#" class="pass-forgot">Forgotten your password?</a>
+
+        <div class="bottom">
+          <p>Don't have an account?</p>
+
+          <button id="reg-btn">REGISTER</button>
+        </div>
+
+        <div class="footer">
+          <a href="#">Terms</a>
+          <p>|</p>
+          <a href="#">Privacy</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

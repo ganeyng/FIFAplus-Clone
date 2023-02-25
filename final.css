@@ -1,0 +1,340 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family:"Poppins 500","Noto Sans Regular","Helvetica Neue",Arial,sans-serif;
+}
+
+.top_nav
+{
+	background-color:rgb(70 0 101);
+	padding:8px 20px;
+}
+
+nav
+{
+	width:100vw;
+	height:100px;
+	background-color:#550065;
+	position:fixed;
+}
+
+#logo
+{
+	max-width:60px;
+}
+
+.top_nav a
+{
+	/* position:absolute; */
+	color:white;
+	float:right;
+	text-decoration:none;
+}
+
+.bottom_nav
+{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	
+}
+.bottom_nav #wc-logo
+{
+	max-width:6rem;
+	padding:8px 26px;
+	position:relative;
+}
+
+.bottom_nav a
+{
+	
+	color:white;
+	padding:20px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:0.875rem;
+	
+}
+
+#login-btn
+{
+	margin-right:2rem;
+}
+
+#search-icon
+{
+	position:absolute;
+	margin:6px;
+}
+
+.search
+{
+	width:30%;
+	background-color:#FFFFFF26;
+	padding:8px 0px 8px 30px;
+	border:none;
+	border-radius:18px;
+}
+
+
+.search::placeholder
+{
+	color:white;
+}
+
+a:hover
+{
+	color:#d5c46c;
+}
+
+.top-container
+{
+	padding-top:100px;
+	display:flex;
+	width:100vw;
+	justify-content:center;
+}
+
+.top-container #wc-logo-main
+{
+	max-width:120px;
+}
+
+.top-container-2
+{	
+	width:100vw;
+}
+
+.top-container-2 p
+{
+	display:inline-block;
+	margin:10px 40px 70px 40px;
+	color:#a5acbb;
+	font-size:111%;
+}
+
+/*
+.top-container-2 .left
+{
+
+}
+*/
+
+.top-container-2 .right
+{
+	/* position:absolute; */
+	float:right;
+}
+
+.main-container
+{
+	display:flex;
+	/* width:100vw; */
+	margin:0rem 4rem 0rem 2rem;
+	justify-content:center;
+	align-items:center;
+}
+/*
+.argentina, .france
+{
+	//padding-top:20px;
+	
+}*/
+
+/*
+.argentina, .france, img, .name, .score
+{
+	display:inline-block;
+	//justify-self:right;
+	align-items:center;
+	
+}*/
+
+.team
+{
+	display:flex;
+	padding:0px 20px;
+	align-items:center;
+	/* justify-content:space-between; */
+}
+
+.win-dot
+{
+	background-color:rgb(85, 0, 101);
+	width:0.5rem;
+	height:0.5rem;
+	border-radius:0.5rem;
+}
+
+#flag
+{
+	width:61px;
+	margin:0px 30px;
+	border:1px solid #d4c164
+
+}
+/*
+.france #fra
+{
+	width:61px;
+	margin-top:12px;
+	border:1px solid #d4c164
+	
+}*/
+
+.main-container .name, .score
+{
+	font-weight:549;
+}
+
+#score
+{
+	display:flex;
+	padding:0px 70px;
+	font-size:1.5rem;
+	font-weight:500;
+	align-items:center;
+	letter-spacing:2px;
+}
+
+#score .pen-score
+{
+	margin:20px;
+	font-size:1rem;
+}
+
+.team .name
+{
+	margin:0px 8px;
+	
+}
+/*
+.france .name
+{
+	margin-left:30px;
+}*/
+
+.full-time
+{
+	
+	margin:auto;
+	width:80px;
+	text-align:center;
+	padding:3px 2px;
+	background-color:rgb(85, 0, 101);
+	color:white;
+	border-radius:8px;
+}
+/*
+.full-time p
+{
+	padding:8px;
+	background-color:rgb(85, 0, 101);
+	color:white;
+	border-radius:8px;
+}*/
+/*
+#highlights
+{
+	display:flex;
+	justify-self:center;
+}*/
+
+.btn
+{	
+	display:flex;
+	justify-content:center;
+	margin:6rem auto;
+	align-items:center;
+	font-size:0.875rem;
+	color:white;
+	width:fit-content;
+	padding:0rem 0.75rem;
+	background:linear-gradient(90deg, #00b8ff, #0a84ff);
+	border-radius:4rem;
+	
+}
+
+.btn:hover
+{
+	transform:scale(1.1,1.1);
+	transition-duration:0.5s;
+}
+
+footer
+{
+	margin:0px;
+	/* width:100vw; */
+	background-color:#020f2a;
+	height:30vh;
+}
+
+.top-footer
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0.5rem 3rem;
+	border-bottom:1px solid #00b8ff;
+}
+
+.top-footer #logo
+{
+	min-width:98px;
+}
+
+.top-footer .social-media
+{
+	display:flex;
+	width:14rem;
+	margin-left:-8rem;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.top-footer .app-download
+{
+	display:flex;
+	width:15rem;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.bottom-footer
+{
+	display:flex;
+	justify-content:space-between;
+	padding:2rem 8rem;
+}
+
+.bottom-footer .main
+{
+	width:24rem;
+	display:grid;
+	grid-template-columns: auto auto auto;
+	grid-column: 1 / span 6;
+	gap:1.5rem 0.5rem
+	
+}
+
+.bottom-footer .main a
+{
+	text-align:center;
+	text-decoration:none;
+	color:white;
+	font-size:0.875rem;
+}
+
+.item4
+{
+	grid-column: 1 / span 6;
+}
+
+.copyright
+{
+	color:white;
+	font-size:0.7rem;
+	margin-right:-5rem;
+	margin-top:1rem;
+}
